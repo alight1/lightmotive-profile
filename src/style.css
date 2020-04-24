@@ -1,9 +1,114 @@
+:root {
+  /* Font */
+  /* Font ideas from https://www.quicksprout.com/best-font-for-website/ */
+  /* Font sources: TBD... */
+  --font-family-headings: serif;
+  --font-family-paragraph: serif;
+
+  /* Color - Source: TBD */
+  --color-primary: white;
+  --color-primary-paragraph: #238a91;
+  --color-secondary1: #238a91;
+  --color-secondary1-paragraph: white;
+  --color-secondary2: #1761a0;
+  --color-secondary2-paragraph: white;
+
+  /* Size */
+  --header-height: 60px;
+  --header-height-adjust-ratio: 1;
+  --font-size-main: 1.2em;
+  --font-size-heading-step: 0.1625;
+  --professional-logo-width: 90px;
+  --professional-logo-height: 55.5px;
+  --padding-content-box: 0.5em;
+}
+
 html {
   box-sizing: border-box;
+  scroll-padding-top: calc(
+    var(--header-height) * var(--header-height-adjust-ratio)
+  );
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  color: var(--color-primary-paragraph);
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-main);
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--padding-content-box);
+  width: 100%;
+  z-index: 10;
+  height: calc(var(--header-height) * var(--header-height-adjust-ratio));
+  background-color: var(--color-primary);
+  color: var(--color-primary-paragraph);
+}
+
+.professional-logo {
+  width: var(--professional-logo-width);
+  height: var(--professional-logo-height);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 600px;
+}
+
+.nav-link {
+  text-decoration: initial;
+  font-weight: bold;
+}
+
+.site-nav .nav-link {
+  color: var(--color-primary-paragraph);
+}
+
+.main {
+  padding: 0 var(--padding-content-box);
+  margin-top: calc(var(--header-height) * var(--header-height-adjust-ratio));
+}
+
+.welcome-section {
+  height: 100vh;
+  margin-top: calc(var(--header-height) * var(--header-height-adjust-ratio));
+  background-color: var(--color-secondary1);
+  color: var(--color-secondary1-paragraph);
+}
+
+.contact-section {
+  background-color: var(--color-secondary2);
+  color: var(--color-secondary2-paragraph);
+}
+
+.contact-nav .nav-link {
+  color: var(--color-secondary2-paragraph);
+}
+
+@media (max-width: 750px) {
+  :root {
+    --header-height-adjust-ratio: 1.65;
+    --font-size-heading-step: 0.13;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

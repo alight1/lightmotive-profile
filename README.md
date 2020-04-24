@@ -1,8 +1,8 @@
-# Professional profile - freeCodeCamp project
+# Personal portfolio webpage - freeCodeCamp project
 
-My professional profile page =D
+A simple responsive page that shows one's accomplishments, which will serve as a starting point for the professional LightMotive portfolio site.
 
-**[Online demo](https://lightmotive.pro/)**
+**[Online demo](https://lightmotive.pro/fcc-personal-portfolio-page/)**
 
 [Project instructions](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
