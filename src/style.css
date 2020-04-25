@@ -28,6 +28,7 @@ html {
   scroll-padding-top: calc(
     var(--header-height) * var(--header-height-adjust-ratio)
   );
+  scroll-behavior: smooth;
 }
 
 *,
@@ -43,7 +44,7 @@ body {
   margin: 0;
 }
 
-.site-header {
+.site-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,13 +64,6 @@ body {
   height: var(--professional-logo-height);
 }
 
-.site-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  max-width: 600px;
-}
-
 .nav-link {
   text-decoration: initial;
   font-weight: bold;
@@ -84,19 +78,37 @@ body {
   margin-top: calc(var(--header-height) * var(--header-height-adjust-ratio));
 }
 
-.welcome-section {
+.section {
   height: 100vh;
   margin-top: calc(var(--header-height) * var(--header-height-adjust-ratio));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.section--welcome {
   background-color: var(--color-secondary1);
   color: var(--color-secondary1-paragraph);
 }
 
-.contact-section {
+.section.section--portfolio {
+}
+
+.section.section--contact {
   background-color: var(--color-secondary2);
   color: var(--color-secondary2-paragraph);
+  height: 35vh;
+}
+.section.section--contact .contact-nav {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .contact-nav .nav-link {
+  color: var(--color-secondary2-paragraph);
+}
+
+.section.section--contact .contact-nav .contact-nav .nav-link {
   color: var(--color-secondary2-paragraph);
 }
 
