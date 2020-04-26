@@ -20,15 +20,19 @@
     role="region"
     aria-labelledby="welcome-section-header"
   >
-    <div>
-      <header id="welcome-section-header">
-        <h1>LightMotive is Andre Light</h1>
-      </header>
-      <p>
-        Helping humanness shine through empathetic tech enablement and
-        innovative software solutions.
-      </p>
-    </div>
+    <header id="welcome-section-header">
+      <h1>LightMotive is Andre Light</h1>
+    </header>
+    <img
+      src="https://www.gravatar.com/avatar/b2934cae6366d26037b082551e662a7e.jpg?s=400"
+      class="profile-photo"
+      alt="personal photo"
+    />
+    <h2>Trusted Strategic Leader</h2>
+    <p>
+      Helping humanness shine through empathetic tech enablement and innovative
+      software solutions.
+    </p>
   </section>
   <section
     id="projects"
@@ -36,16 +40,118 @@
     role="region"
     aria-labelledby="projects-header"
   >
-    <div>
-      <header id="projects-header"><h2>Portfolio</h2></header>
+    <header id="projects-header"><h2>Portfolio</h2></header>
+    <div class="projects-container">
       <div class="project-tile">
-        <a href="https://github.com/lightmotive/" target="_blank">GitHub</a>
+        <img
+          src="./assets/screenshot-fcc-product-landing-page.png"
+          alt="project screenshot"
+          class="project-tile__screenshot"
+        />
+        <div class="project-tile__description">
+          Product landing
+        </div>
+        <div class="project-tile__links">
+          <a
+            href="https://lightmotive.pro/fcc-product-landing-page/"
+            target="_blank"
+          >
+            Demo
+          </a>
+          <a
+            href="https://github.com/lightmotive/fcc-product-landing-page/"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
       </div>
+
       <div class="project-tile">
-        More project tiles coming soon...
+        <img
+          src="./assets/screenshot-fcc-tribute-page.png"
+          alt="project screenshot"
+          class="project-tile__screenshot"
+        />
+        <div class="project-tile__description">
+          Tribute
+        </div>
+        <div class="project-tile__links">
+          <a href="https://lightmotive.pro/fcc-tribute-page/" target="_blank">
+            Demo
+          </a>
+          <a
+            href="https://github.com/lightmotive/fcc-tribute-page/"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <img
+          src="./assets/screenshot-fcc-technical-documentation-page.png"
+          alt="project screenshot"
+          class="project-tile__screenshot"
+        />
+        <div class="project-tile__description">
+          Technical documentation
+        </div>
+        <div class="project-tile__links">
+          <a
+            href="https://lightmotive.pro/fcc-technical-documentation-page/"
+            target="_blank"
+          >
+            Demo
+          </a>
+          <a
+            href="https://github.com/lightmotive/fcc-technical-documentation-page/"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <img
+          src="./assets/screenshot-fcc-survey-form.png"
+          alt="project screenshot"
+          class="project-tile__screenshot"
+        />
+        <div class="project-tile__description">
+          Survey
+        </div>
+        <div class="project-tile__links">
+          <a href="https://lightmotive.pro/fcc-survey-form/" target="_blank">
+            Demo
+          </a>
+          <a
+            href="https://github.com/lightmotive/fcc-survey-form/"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <img
+          src="./assets/professional-logo-111x180.png"
+          alt="project screenshot"
+          class="project-tile__screenshot"
+        />
+        <div class="project-tile__description">
+          More in progress...
+        </div>
+        <div class="project-tile__links">
+          <a href="#" target="_blank">
+            Demo
+          </a>
+          <a href="#" target="_blank">Source Code</a>
+        </div>
       </div>
     </div>
   </section>
+</main>
+<footer role="contentinfo">
   <section
     id="contact-section"
     class="section section--contact"
@@ -54,9 +160,7 @@
   >
     <div>
       <header id="contact-section-header">
-        <h2>
-          Stalk, then verify...
-        </h2>
+        <h2>Contact</h2>
       </header>
       <nav
         class="contact-nav"
@@ -68,15 +172,16 @@
           href="https://github.com/lightmotive/"
           target="_blank"
           class="nav-link"
-          >GitHub</a
-        >
+          >Feel free to stalk first <i class="fab fa-github"></i
+        ></a>
+        <br />
         <a
           href="https://www.linkedin.com/in/andrelight/"
           target="_blank"
           class="nav-link"
-          >LinkedIn</a
-        >
+          >Let's connect to verify <i class="fab fa-linkedin"></i
+        ></a>
       </nav>
     </div>
   </section>
-</main>
+</footer>

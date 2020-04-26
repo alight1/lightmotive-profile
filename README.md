@@ -8,6 +8,8 @@ A simple responsive page that shows one's accomplishments, which will serve as a
 
 ## Demonstrated concepts
 
+**Main languages:** HTML, CSS
+
 - Coming soon...
 
 **See also:** [Common concepts, config, and documentation](https://github.com/alight1/template-webpack-with-s3-hosting#common)
