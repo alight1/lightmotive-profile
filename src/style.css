@@ -11,6 +11,7 @@
   --color-secondary1-paragraph: white;
   --color-secondary2: #1761a0;
   --color-secondary2-paragraph: white;
+  --color-tile-shadow: #979994;
 
   /* Size */
   --header-height: 70px;
@@ -135,7 +136,7 @@ header {
   background-color: var(--color-primary-paragraph);
   color: var(--color-primary);
   border-radius: 0 0 var(--padding-content-box) var(--padding-content-box);
-  box-shadow: 0px 1px 2px 0px #979994;
+  box-shadow: 0px 1px 2px 0px var(--color-tile-shadow);
 }
 
 .section.section--portfolio
@@ -204,11 +205,6 @@ header {
 }
 
 @media (max-width: 600px) {
-  :root {
-    /* --header-height-adjust-ratio: 1.65;
-    --font-size-heading-step: 0.13; */
-  }
-
   .site-nav .nav-items {
     width: 100%;
   }
