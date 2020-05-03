@@ -109,11 +109,6 @@ header {
   color: var(--color-secondary1-paragraph);
 }
 
-.profile-photo {
-  width: 200px;
-  border-radius: 50%;
-}
-
 .section.section--portfolio {
   align-self: center;
   flex-direction: column;
